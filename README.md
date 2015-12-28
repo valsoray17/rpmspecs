@@ -8,7 +8,9 @@ RPM spec files
 
 #Fedora Packaging
 [Fedora Packagers Guilde](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)
+
 [Fedora RPM Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/)
+
 [Joining Packagers](https://fedoraproject.org/wiki/Join_the_package_collection_maintainers)
 
 #Compton Info
