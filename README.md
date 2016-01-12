@@ -25,3 +25,9 @@ RPM spec files
 
 #Github
 [Tarball Docs](https://developer.github.com/v3/repos/contents/)
+
+#Commands
+rpmdev-bumpspec -n 0.15.12 -r rofi.spec --comment="Updating..." -u "User Name <user.name@host.com>"
+pkg-config --list-all | grep xft2
+pkg-config --print-requires cairo-xlib
+pkg-config --list-all | grep startup-notification-1.0
