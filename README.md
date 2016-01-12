@@ -13,11 +13,15 @@ RPM spec files
 
 #Compton Info
 [Old RPM Package](http://pkgs.fedoraproject.org/cgit/?q=compton)  
-[Direct Link](https://admin.fedoraproject.org/pkgdb/package/rpms/compton/)  
+[Direct Link](https://admin.fedoraproject.org/pkgdb/package/rpms/compton/)
+[openSuSE Link](https://build.opensuse.org/package/binaries/X11:QtDesktop/compton?repository=Fedora_21)
 
 #Packaging Links
 [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config/)   
 [How To Find Libs](https://cmake.org/Wiki/CMake:How_To_Find_Libraries)   
 [pkg-config Guide](http://people.freedesktop.org/~dbn/pkg-config-guide.html)   
 [BuildRequires](https://fedoraproject.org/wiki/Packaging:Guidelines#BuildRequires_based_on_pkg-config)   
-[Howto Use BuildRequires](https://fedoraproject.org/wiki/HOWTOUseRequires)   
+[Howto Use BuildRequires](https://fedoraproject.org/wiki/HOWTOUseRequires)
+
+#Github
+[Tarball Docs](https://developer.github.com/v3/repos/contents/)
