@@ -30,6 +30,8 @@ BuildRequires: pkgconfig(gl)
 BuildRequires: pkgconfig(dbus-1)
 BuildRequires: asciidoc
 
+BuildRequires: desktop-file-utils
+
 Requires:       xorg-x11-utils
 
 %description
@@ -44,6 +46,7 @@ make docs
 
 %install
 %make_install
+desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 
 %files
 %doc LICENSE README.md
@@ -51,6 +54,8 @@ make docs
 %{_bindir}/%{name}-trans
 %{_mandir}/man1/%{name}.1.*
 %{_mandir}/man1/%{name}-trans.1.*
+%{_datadir}/icons/*
+%{_datadir}/applications/%{name}.desktop
 
 %changelog
 * Mon Jan 18 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 0.1-1
