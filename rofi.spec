@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	0.15.12
+Version:	1.0.0
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -10,12 +10,22 @@ Source0:	https://github.com/DaveDavenport/%{name}/releases/download/%{version}/%
 
 BuildRequires: i3 >= 4.5
 BuildRequires: pkgconfig(xft) >= 2.0
-BuildRequires: pkgconfig(cairo-xlib)
+BuildRequires: pkgconfig(cairo-xcb)
 BuildRequires: pkgconfig(glib-2.0)
 BuildRequires: pkgconfig(libstartup-notification-1.0)
 BuildRequires: pkgconfig(pangocairo)
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xinerama)
+BuildRequires: pkgconfig(xkbcommon)
+BuildRequires: pkgconfig(xkbcommon-x11)
+BuildRequires: pkgconfig(xcb)
+BuildRequires: pkgconfig(xcb-xkb)
+BuildRequires: pkgconfig(xcb-xinerama)
+BuildRequires: pkgconfig(x11-xcb)
+BuildRequires: pkgconfig(xcb-util)
+BuildRequires: pkgconfig(xcb-ewmh)
+BuildRequires: pkgconfig(xcb-icccm)
+
 
 %description
 A popup window switcher roughly based on superswitcher, requiring only xlib and pango.
@@ -42,6 +52,9 @@ make test
 %license COPYING
 
 %changelog
+* Wed Apr 20 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.0.0-1
+- Updating to rofi 1.0.0
+
 * Wed Dec 30 2015 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 0.15.12-1
 - Updating to 0.15.12
 
