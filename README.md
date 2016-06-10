@@ -1,6 +1,18 @@
 # rpmspecs
 RPM spec files
 
+#Packaging info
+* Compton    
+Download source 
+```
+#wget -O chjj-compton-%{commit}.tar.gz --no-check-certificate --content-disposition http://github.com/chjj/compton/tarball/%{commit}
+```
+* i3-gaps
+i3-gaps requires .git dir to be present.    
+```
+git pull && cd .. && tar -zcvf i3-4.12.tar.gz i3
+```
+
 #Useful links
 [How to create RPM package](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)  
 [How to create GNU Hello World package](https://fedoraproject.org/wiki/How_to_create_a_GNU_Hello_RPM_package)  
