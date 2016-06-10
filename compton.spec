@@ -1,8 +1,8 @@
-%define commit d7f95b5
+%define commit 2343e4b
 
 Name:           compton
 Version:        0.1
-Release:        1.20160118%{commit}%{?dist}
+Release:        1.20160609%{commit}%{?dist}
 Summary:        Compositor for X11
 
 License:        MIT
@@ -12,7 +12,7 @@ URL:            https://github.com/chjj/%{name}
 # following command to generate the tarball:
 # wget -O chjj-compton-%{commit}.tar.gz --no-check-certificate --content-disposition http://github.com/chjj/compton/tarball/%{commit}
 
-Source0:        %{name}-%{commit}.tar.gz
+Source0:        chjj-%{name}-%{commit}.tar.gz
 
 BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xcomposite)
@@ -58,6 +58,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/%{name}.desktop
 
 %changelog
+* Thu Jun 9 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 0.1-1.201606092343e4b
+- Updating to 2343e4b commit
+
 * Mon Jan 18 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 0.1-1
 - Initial version of the Compton specfile
 
