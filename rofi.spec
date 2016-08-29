@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	1.1.0
+Version:	1.2.0
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -11,12 +11,11 @@ Source0:	https://github.com/DaveDavenport/%{name}/releases/download/%{version}/%
 BuildRequires: i3 >= 4.5
 BuildRequires: pkgconfig(xft) >= 2.0
 BuildRequires: pkgconfig(cairo-xcb)
-BuildRequires: pkgconfig(glib-2.0)
+BuildRequires: pkgconfig(glib-2.0) >= 2.40
 BuildRequires: pkgconfig(libstartup-notification-1.0)
 BuildRequires: pkgconfig(pangocairo)
-BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xinerama)
-BuildRequires: pkgconfig(xkbcommon)
+BuildRequires: pkgconfig(xkbcommon) >= 0.5.0
 BuildRequires: pkgconfig(xkbcommon-x11)
 BuildRequires: pkgconfig(xcb)
 BuildRequires: pkgconfig(xcb-xkb)
@@ -25,6 +24,7 @@ BuildRequires: pkgconfig(x11-xcb)
 BuildRequires: pkgconfig(xcb-util)
 BuildRequires: pkgconfig(xcb-ewmh)
 BuildRequires: pkgconfig(xcb-icccm)
+BuildRequires: pkgconfig(xcb-xrm)
 
 
 %description
@@ -52,6 +52,10 @@ make test
 %license COPYING
 
 %changelog
+* Fri Aug 26 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.2.0-1
+- Updating to version 1.2.0; removed XLib dependency (replaced with
+  xcb-util.xrm)
+
 * Wed Jun 15 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.1.0-1
 - Updating to version 1.1.0
 
