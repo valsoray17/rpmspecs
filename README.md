@@ -12,14 +12,13 @@ Download source
 [openSuSE Link](https://build.opensuse.org/package/binaries/X11:QtDesktop/compton?repository=Fedora_21)
 ### i3-gaps
 i3-gaps package doesn't have configure script, hence need to
+
 1. Untar i3-gaps.tar.gz package
 2. Run autoreconf -fi (this is not recommended to be run from RPM build)
 3. Package the i3-gaps back
-[Fedora i3 spec](http://pkgs.fedoraproject.org/cgit/rpms/i3.git/tree/i3.spec)
-[Arch i3-gaps pkgbuild](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=i3-gaps)
-```
-git pull && cd .. && tar -zcvf i3-4.12.tar.gz i3
-```
+
+[Fedora i3 spec](http://pkgs.fedoraproject.org/cgit/rpms/i3.git/tree/i3.spec)  
+[Arch i3-gaps pkgbuild](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=i3-gaps)  
 
 ## Useful links
 [How to create RPM package](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)  
