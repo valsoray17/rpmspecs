@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	1.2.0
+Version:	1.3.1
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -46,12 +46,20 @@ make test
 %files
 %{_bindir}/rofi
 %{_bindir}/rofi-sensible-terminal
+%{_bindir}/rofi-theme-selector
 %{_mandir}/man1/rofi.1.*
 %{_mandir}/man1/rofi-sensible-terminal.1.*
+%{_datadir}/rofi/themes/*.theme
 %doc AUTHORS Changelog README.md Examples 
 %license COPYING
 
 %changelog
+* Tue Jan 10 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.3.1-1
+- Updating to version 1.3.1;
+
+* Mon Dec 26 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.3.0-1
+- Updating to version 1.3.0;
+
 * Fri Aug 26 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.2.0-1
 - Updating to version 1.2.0; removed XLib dependency (replaced with
   xcb-util.xrm)
