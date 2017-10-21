@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	1.3.1
+Version:	1.4.2
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -25,6 +25,10 @@ BuildRequires: pkgconfig(xcb-util)
 BuildRequires: pkgconfig(xcb-ewmh)
 BuildRequires: pkgconfig(xcb-icccm)
 BuildRequires: pkgconfig(xcb-xrm)
+BuildRequires: pkgconfig(librsvg-2.0)
+BuildRequires: pkgconfig(check) >= 0.11.0
+BuildRequires: flex >= 2.5.39
+BuildRequires: bison
 
 
 %description
@@ -47,13 +51,22 @@ make test
 %{_bindir}/rofi
 %{_bindir}/rofi-sensible-terminal
 %{_bindir}/rofi-theme-selector
+%{_includedir}/rofi/*.h
+%{_libdir}/pkgconfig/*.pc
 %{_mandir}/man1/rofi.1.*
 %{_mandir}/man1/rofi-sensible-terminal.1.*
-%{_datadir}/rofi/themes/*.theme
+%{_mandir}/man5/rofi-theme.5.*
+%{_datadir}/rofi/themes/*.rasi
 %doc AUTHORS Changelog README.md Examples 
 %license COPYING
 
 %changelog
+* Sat Oct 21 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.4.2-1
+- Updating to version 1.4.2;
+
+* Sat Oct 21 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.4.1-1
+- Updating to version 1.4.1;
+
 * Tue Jan 10 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.3.1-1
 - Updating to version 1.3.1;
 
