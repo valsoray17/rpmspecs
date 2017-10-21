@@ -28,6 +28,7 @@ i3-gaps package doesn't have configure script, hence need to
 ### Fedora Packaging
 [Fedora Packagers Guilde](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)  
 [Fedora RPM Guide](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/RPM_Guide/)  
+[RPM Macros](https://fedoraproject.org/wiki/Packaging:RPMMacros?rd=Packaging/RPMMacros)
 [Joining Packagers](https://fedoraproject.org/wiki/Join_the_package_collection_maintainers)  
 
 ### Packaging Links
