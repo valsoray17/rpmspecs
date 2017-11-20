@@ -1,4 +1,5 @@
 %define commit 2343e4b
+%undefine _debugsource_packages
 
 Name:           compton
 Version:        0.1
