@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	1.4.2
+Version:	1.5.0
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -55,12 +55,16 @@ make test
 %{_libdir}/pkgconfig/*.pc
 %{_mandir}/man1/rofi.1.*
 %{_mandir}/man1/rofi-sensible-terminal.1.*
+%{_mandir}/man1/rofi-theme-selector.1.*
 %{_mandir}/man5/rofi-theme.5.*
 %{_datadir}/rofi/themes/*.rasi
 %doc AUTHORS Changelog README.md Examples 
 %license COPYING
 
 %changelog
+* Tue Feb 06 2018 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.5.0-1
+- Updating to version 1.5.0;
+
 * Sat Oct 21 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.4.2-1
 - Updating to version 1.4.2;
 
