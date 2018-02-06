@@ -1,7 +1,7 @@
 %define base_name i3
 
 Name:           i3-gaps
-Version:        4.13
+Version:        4.14.1
 Release:        1%{?dist}
 Summary:        i3 with more features
 License:        BSD
@@ -104,6 +104,9 @@ install -Dpm0644 %{SOURCE1} \
 %doc docs/*.{html,png} pseudo-doc/doxygen/
 
 %changelog
+* Mon Nov 20 2017 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 4.14.1-1
+- Updating to version 4.14.1
+
 * Thu Nov 10 2016 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 4.13-1
 - Updating to version 4.13; Added dependency for cairo/pango and xcb-xrm
 
