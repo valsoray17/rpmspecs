@@ -109,3 +109,10 @@ Patch0:
         fi \
         fi
 ```
+
+## Simple xprofile.sh
+```
+#!/bin/sh
+
+[ -r $HOME/.xprofile ] && . $HOME/.xprofile
+```
