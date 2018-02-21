@@ -20,10 +20,10 @@ i3-gaps package doesn't have configure script, hence need to
 [Fedora i3 spec](http://pkgs.fedoraproject.org/cgit/rpms/i3.git/tree/i3.spec)  
 [Arch i3-gaps pkgbuild](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=i3-gaps)  
 
-## Useful links
+## Useful links - UPDATED
 [How to create RPM package](https://fedoraproject.org/wiki/How_to_create_an_RPM_package)  
 [How to create GNU Hello World package](https://fedoraproject.org/wiki/How_to_create_a_GNU_Hello_RPM_package)  
-[Max RPM](http://rpm.org/max-rpm-snapshot/index.html)
+[Max RPM](http://ftp.rpm.org/max-rpm/)
 
 ### Fedora Packaging
 [Fedora Packagers Guilde](https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html/Packagers_Guide/)  
