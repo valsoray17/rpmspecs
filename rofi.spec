@@ -1,5 +1,5 @@
 Name:		rofi
-Version:	1.5.0
+Version:	1.5.1
 Release:	1%{?dist}
 Summary:	A window switcher, run dialog and dmenu replacement
 
@@ -62,6 +62,9 @@ make test
 %license COPYING
 
 %changelog
+* Fri Mar 30 2018 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.5.1-1
+- Updating to version 1.5.1;
+
 * Tue Feb 06 2018 Yaroslav Sapozhnyk <yaroslav.sapozhnik@gmail.com> - 1.5.0-1
 - Updating to version 1.5.0;
 
